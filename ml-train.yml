@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+    training:
+      image: ml-training
+      build:
+            context: ./ml-training

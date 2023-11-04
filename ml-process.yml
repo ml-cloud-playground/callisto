@@ -1,0 +1,31 @@
+version: '2'
+
+services:
+    ml-processing: 
+      image: ml-processing
+      build:
+            context: ./ml-processing     
+      ports:
+        - "5000:5000"   
+    ml-app:
+      image: ml-app
+      build:
+            context: ./ml-app        
+      ports:
+            - "3000:3000"
+      depends_on:
+        - ml-processing
+      links:
+        - ml-processing
+    ml-front-end:
+      image: ml-front-end
+      build:
+            context: ./ml-frontend        
+      ports:
+            - "4200:4200"
+      depends_on:
+        - ml-app
+      links:
+        - ml-app
+networks: 
+  default: 

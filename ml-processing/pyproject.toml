@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ml-test-processing"
+version = "0.1.0"
+description = ""
+authors = ["TT <tarikub@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.3.3"
+scikit-learn = "^1.3.0"
+nltk = "^3.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

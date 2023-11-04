@@ -1,0 +1,21 @@
+/bin/
+/node_modules/
+node_modules
+build
+npm-debug.log
+.git
+.vscode
+.env
+.DS_Store
+pyvenv.cfg
+Scripts
+Lib
+Include
+notes.txt
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
