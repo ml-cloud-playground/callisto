@@ -1,0 +1,10 @@
+{
+    "/api": {
+      "target": "http://ml-app:3000",
+      "secure": false,
+      "pathRewrite": {
+        "^/api": ""
+      },
+      "logLevel": "debug"
+    }
+  }

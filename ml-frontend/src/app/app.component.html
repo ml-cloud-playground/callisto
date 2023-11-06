@@ -1,0 +1,19 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <span class="logo-title">Cloud ML Template</span>
+    <div class="spacer"></div>
+</div>
+
+<div class="content" role="main">
+  <div class="input-form">
+    <form>
+      <mat-form-field class="input-full-width" (change)="updateEmotion($event)">
+        <mat-label>Add in your text for Emotion Analysis</mat-label>
+        <textarea matInput placeholder="Eg. It makes me feel..."></textarea>
+      </mat-form-field>
+    </form>
+    <mat-card>
+      <mat-card-content [ngClass]="score">{{score}}</mat-card-content>
+    </mat-card>
+  </div>
+</div>
